@@ -135,6 +135,12 @@ class PHPUnitKoansTest extends PHPUnit_Framework_TestCase {
 	 'Update FizzBuzz.php to return FizzBuzz'
       );
    }
-   
-   
+
+   public function testSuccess() {
+      echo PHP_EOL;
+      echo "=========================" . PHP_EOL;
+      echo "=   You are now on the  =" . PHP_EOL;
+      echo "= Path Of The Craftsman =" . PHP_EOL;
+      echo "=========================" . PHP_EOL;
+   }
 }
