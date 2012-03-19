@@ -3,7 +3,7 @@
 class FizzBuzz {
    
    public function getResultForNumber($number) {
-      return $number;
+      return 0;
    }
 
 }

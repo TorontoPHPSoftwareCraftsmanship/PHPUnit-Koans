@@ -59,13 +59,80 @@ class PHPUnitKoansTest extends PHPUnit_Framework_TestCase {
 	 'Make this function return 3.'
       );
    }
+
+   /**
+   * Now to test some objects  
+   * These tests more are more representive of tests  
+   * you would right in the real world.
+   * 
+   * Focus on only programming enough logic to make the
+   * test pass. Try not to program ahead of the what the
+   * Assertions expect.
+   */
    
-   public function testAssertEqualsWithClassFunction() {
+   public function testFizzBuzz1() {
+      // Initialize the object you want to test.
+      // This object is know as the Subject Under Test
       $fizzbuzz = new FizzBuzz();
+      
+      // Now insert test data into a function and
+      // get the result
+      $result = $fizzbuzz->getResultForNumber(1);
+
+      // Use an Assertion to prove that you got the
+      // correct result.
       $this->assertEquals(
-	 1,  
-	 count( array('foo','bar') ),  
-	 'Make this function return 3.'
+	 '1',  
+	 $result,  
+	 'Update FizzBuzz.php to return 1'
+      );
+   }
+   
+   public function testFizzBuzz2() {
+      $fizzbuzz = new FizzBuzz();
+      
+      $result = $fizzbuzz->getResultForNumber(2);
+
+      $this->assertEquals(
+	 '2',  
+	 $result,  
+	 'Update FizzBuzz.php to return 2'
+      );
+   }
+   
+   public function testFizzBuzz3() {
+      $fizzbuzz = new FizzBuzz();
+      
+      $result = $fizzbuzz->getResultForNumber(3);
+
+      $this->assertEquals(
+	 'Fizz',  
+	 $result,  
+	 'Update FizzBuzz.php to return Fizz'
+      );
+   }
+   
+   public function testFizzBuzz5() {
+      $fizzbuzz = new FizzBuzz();
+      
+      $result = $fizzbuzz->getResultForNumber(5);
+
+      $this->assertEquals(
+	 'Buzz',  
+	 $result,  
+	 'Update FizzBuzz.php to return Buzz'
+      );
+   }
+   
+   public function testFizzBuzz15() {
+      $fizzbuzz = new FizzBuzz();
+      
+      $result = $fizzbuzz->getResultForNumber(15);
+
+      $this->assertEquals(
+	 'FizzBuzz',  
+	 $result,  
+	 'Update FizzBuzz.php to return FizzBuzz'
       );
    }
    
