@@ -63,7 +63,7 @@ class PHPUnitKoansTest extends PHPUnit_Framework_TestCase {
    /**
    * Now to test some objects  
    * These tests more are more representive of tests  
-   * you would right in the real world.
+   * you would write in the real world.
    * 
    * Focus on only programming enough logic to make the
    * test pass. Try not to program ahead of the what the
@@ -72,12 +72,12 @@ class PHPUnitKoansTest extends PHPUnit_Framework_TestCase {
    
    public function testFizzBuzz1() {
       // Initialize the object you want to test.
-      // This object is know as the Subject Under Test
-      $fizzbuzz = new FizzBuzz();
+      // This object is know as the System Under Test (sut)
+      $sut = new FizzBuzz();
       
       // Now insert test data into a function and
       // get the result
-      $result = $fizzbuzz->getResultForNumber(1);
+      $result = $sut->getResultForNumber(1);
 
       // Use an Assertion to prove that you got the
       // correct result.
@@ -89,9 +89,9 @@ class PHPUnitKoansTest extends PHPUnit_Framework_TestCase {
    }
    
    public function testFizzBuzz2() {
-      $fizzbuzz = new FizzBuzz();
+      $sut = new FizzBuzz();
       
-      $result = $fizzbuzz->getResultForNumber(2);
+      $result = $sut->getResultForNumber(2);
 
       $this->assertEquals(
 	 '2',  
@@ -101,9 +101,9 @@ class PHPUnitKoansTest extends PHPUnit_Framework_TestCase {
    }
    
    public function testFizzBuzz3() {
-      $fizzbuzz = new FizzBuzz();
+      $sut = new FizzBuzz();
       
-      $result = $fizzbuzz->getResultForNumber(3);
+      $result = $sut->getResultForNumber(3);
 
       $this->assertEquals(
 	 'Fizz',  
@@ -113,9 +113,9 @@ class PHPUnitKoansTest extends PHPUnit_Framework_TestCase {
    }
    
    public function testFizzBuzz5() {
-      $fizzbuzz = new FizzBuzz();
+      $sut = new FizzBuzz();
       
-      $result = $fizzbuzz->getResultForNumber(5);
+      $result = $sut->getResultForNumber(5);
 
       $this->assertEquals(
 	 'Buzz',  
@@ -125,9 +125,9 @@ class PHPUnitKoansTest extends PHPUnit_Framework_TestCase {
    }
    
    public function testFizzBuzz15() {
-      $fizzbuzz = new FizzBuzz();
+      $sut = new FizzBuzz();
       
-      $result = $fizzbuzz->getResultForNumber(15);
+      $result = $sut->getResultForNumber(15);
 
       $this->assertEquals(
 	 'FizzBuzz',  
