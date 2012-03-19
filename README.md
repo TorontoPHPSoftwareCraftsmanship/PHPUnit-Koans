@@ -13,4 +13,4 @@ Requirements
 Instructions
 -----
 
-Complete the failing tests in PHPUnitKoansTest.php in sequence and run enlgihten.sh each time you think you have found the solution to the function.
+Complete the failing tests in PHPUnitKoansTest.php in sequence and run enlighten.sh each time you think you have found the solution to the function.
